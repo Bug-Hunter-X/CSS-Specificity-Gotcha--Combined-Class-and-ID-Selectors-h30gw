@@ -1,0 +1,13 @@
+The solution involves understanding and adjusting selector specificity. One approach is to refactor the CSS selectors to use more appropriate and less specific selectors or to explicitly increase the specificity of the preferred selectors. In the case of this example, we could remove the class selector or adjust the selectors to reflect the desired precedence:
+
+```css
+#container {
+  width: 200px;
+}
+
+.container {
+  width: 100px;
+}
+```
+
+In this solution, we prioritize the id selector, ensuring that `#container` takes precedence and the element width is 200px as intended.
